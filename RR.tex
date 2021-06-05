@@ -1,0 +1,305 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{graphicx, array, blindtext}
+\usepackage{booktabs} 
+\usepackage{colortbl} 
+\usepackage{xcolor} 
+\usepackage{xfrac}
+%notas al margen
+\usepackage{marginnote}
+\usepackage{booktabs} 
+\usepackage{array} 
+\usepackage{tabularx} 
+\usepackage{graphicx}
+% Motivación para realizar la RR.
+%+ Pregunta de investigación principal y preguntas específicas.
+%+ Procedimiento de búsqueda, criterios de inclusión y exclusión.
+%+ Mecanismo de extracción.
+%+ Notas sobre cosas observadas en las extracciones preliminares
+%(modelos de calidad de software, métricas, grupos de técnicas,
+%sinónimos).
+%+ Planificación de la ejecución: qué fuentes vas a procesar, en qué
+%períodos, esfuerzo estimado.
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{RR Calidad de Código*\\
+{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+should not be used}
+\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address}
+
+
+}
+
+\maketitle
+
+\begin{abstract}
+TODO \LaTeX.
+\end{abstract}
+
+\begin{IEEEkeywords}
+calidad de código, rapid review, ingeniería de sofware
+\end{IEEEkeywords}
+
+\section{Contexto}
+
+% Uno de los desafíos más relevantes actualmente en el contexto de investigación de Ingeniería de Software es el de proveer evidencia en  la práctica\cite{cartaxo2019software}, siendo  este uno de los principales objetivos de EBSE (Evidence Base Software Enginnering) \cite{cartaxo2019software}. 
+
+Descripción del contexto de Q de Software (TODO) 
+\section{Motivación}
+
+ El concepto "calidad de código" es utilizado de forma frecuente en distintas publicaciones del área de Ingeniería de Software \cite{stamelos2002code,spinellis2006code,butler2010exploring,baggen2012standardized, raychev2021learning,yang2021design} sin presentar en común una definición respecto del mismo.   En una de las principales guías de la disciplina:  Guide to the Software Engineering Body of Knowledge (SWEBOK) \cite{bourque1999guide} propuesta por la IEEE Computer Society  tampoco  se presenta una definición del término "code quality" si bien se mencionan aspectos de calidad en las distintas áreas de conocimiento. 
+  Es en este contexto que nos surge la pregunta de investigación:  ¿Qué es la calidad de código?  mas específicamente ¿Que se entiende por calidad de código? (PI)
+
+ En este trabajo a su vez buscamos complementar trabajos anteriores respecto de la temática \cite{adorjan2020code} teniendo como principal objetivo lograr una definición de calidad de código, sus atributos y principales prácticas.
+
+\section{Objetivo}
+El objetivo del presente trabajo es obtener a partir de una revisión rápida de la literatura (RR) \cite{cartaxo2019software}\cite{cartaxo2020rapid}  una posible definición de calidad de código, sus atributos y principales prácticas.
+
+\section{Método}
+
+JUSTICAFICIóN FORMAL - 
+
+Como método de investigación seleccionamos la propuesta de Cartaxo et al. \cite{cartaxo2020rapid} en relación a la ejecución de una revisión rápida de la literatura (RR). Las RR reducen el esfuerzo de algunos de los pasos de las revisiones sistemáticas de la literatura y permiten posteriormente  mediante el reporte de  resultados (Evidence Briefings) transferir el conocimiento los practicantes de la industria \cite{cartaxo2016evidence}. 
+
+
+A continuación detallamos el protocolo definido y establecemos un marco contextualizado a nuestro estudio: 
+
+\section{Características de las etapas}
+
+  \textit{Planificación de una revisión rápida:}   Se diseñó un protocolo donde se establecieron  las decisiones y procedimientos para realizar la RR. 
+
+\textit{ Demanda de RR :}  En nuestro estudio el grupo de investigación enfocó la agenda en base a un problema práctico en relación a la definición de qué es la calidad de código, basado fundamentalmente en la necesidad planteada en un estudio previo por parte de líderes técnicos de la industria (referencia a paper CLEI) en referencia al concepto. 
+
+\textit{Definición del problema: } Dado que el problema aún no está  definido, decidimos  utilizar uno de los métodos de investigación cualitativa como entrevistas para comprender mejor el contexto y posteriormente realizar esta RR. A su vez, más adelante para complementar este método utilizaremos tal vez workshops,  aplicación de un caso de estudio u otro que el grupo de investigación considere adecuado.
+
+\textit{Definición de  las preguntas de investigación }: Las preguntas de investigación de la presente RR están definidas y son las siguientes:
+
+\textbf{Preguntas de Investigación}
+\textit{¿Qué es la calidad de código?}
+
+\textit{Preguntas de Investigación}
+
+    \textit{Preguntas específicas}
+   \begin{enumerate}
+   \item  ¿Qué se entiende por Calidad de Código? (P1)
+   \item ¿Qué atributos de calidad de código se presentan en los artículos seleccionados? (P2)
+    \item ¿Qué prácticas se reportan para controlar la calidad del código? (P3)
+   
+\end{enumerate}
+
+\textit{ Definición del protocolo:}  El protocolo de una RR consiste en especificar todos los pasos metodológicos que comprende la revisión  \cite{cartaxo2020rapid}.  En este contexto, se plantean los siguientes pasos: 
+
+\begin{enumerate}
+\item Selección de artículos de \textbf{Scopus} periodo 2019 y 2020 asociados a la búsqueda "code quality" AND software. El criterio de inclusión esta asociado únicamente a la disponibilidad del artículo digital en relación a las fuentes bibliográficas consultadas.
+\item  Descarga de los artículos en las fuentes bibliográficas disponibles. 
+\item Diseño y construcción del template  de extracción (ver template de extracción)
+\item Se definieron en conjunto 2 roles principales el de conductor de RR y validadores de la RR. 
+\item Se establecieron/diseñaron 3 etapas de iteración en la creación de este artefacto: 
+    \textit{Etapa 1: } El conductor de la RR crea el formato inicial de qué características serán utilizadas en la extracción. Facilita un primer bosquejo de template de extracción y cada investigador analiza por separado el primer artículo de la lista identificando los atributos de CQ, prácticas métodos, etc.  En conjunto se establece una primera versión del template de extracción a partir de una etapa piloto. (Dejar evidencia en un anexo de cada una de las extracciones)
+  \textit{  Etapa 2: } El conductor principal de la RR selecciona un subconjunto al azar de la RR para continuar con la aplicación del criterio establecido e identificar mejoras en el protocolo y template de extracción con el objetivo de  realizar posibles ajustes. Los investigadores en conjunto seleccionan otro artículo y se ajusta nuevamente el template de extracción. En esta etapa, el conductor principal de la RR realizó una primera ejecución del conjunto de artículos disponibles como fuente dejando en un repositorio en común la primera extracción de los mismos y una categorización de alto/medio/bajo  contenido asociado al contexto de CQ. A partir de esa categorización los artículos calificados como bajo contenido de CQ serán parte del criterio de exclusión en la etapa 3 de ejecución de la RR. 
+    \textit{Etapa 3:} Etapa de diseño final del template de extracción de la RR y aplicación de criterios de extracción. En concenso el grupo de investigación establece el criterio de cual será el tipo de reporte global de extracción, y cómo se realizará la síntesis de los artículos.
+\item Los investigadores en conjunto validan los criterios de extracción y template final de extracción y fundamentalmente el medio de comunicación de los resultados.  El conductor principal de la RR realiza la extracción, reporta los resultados preliminares al equipo. 
+\item Se analizan en conjunto los resultados, la síntesis de la RR y se reporta el medio definido en el punto anterior. A su vez se definen los medios de comunicación de los resultados obtenidos. 
+\item Se envía a un conjunto seleccionado de líderes técnicos de la industria el reporte esperando un feedback respecto del mismo. Se procesan los resultados obtenidos, se analizan y documentan.
+\item Los investigadores realizan un análisis crítico y retrospectivo respecto del método aplicado , técnicas, resultados obtenidos. 
+\end{enumerate}
+
+
+
+
+\textit{Realización de una revisión rápida}, proporcionando evidencia a los practicantes de estos puntos mencionados.
+
+\textit{Estrategia de Búsqueda} :  Si bien generalmente se emplean múltiples estrategias de búsqueda para garantizar una cobertura exhaustiva de una RR o SLR, en este estudio se decidió restringir utilizando  un único motor de búsqueda y restringir a los últimos dos años en relación al período de publicaciones (2019 y 2020 respectivamente).
+
+\textbf{Fuente:} Scopus 
+\textbf{Fecha : }14-Nov-2020 
+\textbf{cadéna de búsqueda}: \textit{\textbf{“code quality” AND software}}
+especificamente: "TITLE-ABS-KEY ( "code quality" AND software ) AND ( LIMIT-TO ( PUBYEAR , 2021 ) OR LIMIT-TO ( PUBYEAR , 2020 )" 
+
+\textbf{Formato de Extracción}
+\begin{itemize}
+\item  DEF$\_$CQ$\_$ABSTRACT   En el abstract del artículo se menciona directamente o indirectamente al concepto de Calidad de Código (CQ) (Copiar Literal la Mención (CLM)) . NULL en caso de no presentar   
+\item CQ$\_$ATRIB  :  En el artículo se mencionanatributos de calidad de código que directa o indirectamente  (Como por ejemplo  mantenibilidad, escalabilidad, disponibilidad, etc). Mencionar y enumerar cuales son los atributos mencionados
+\item CQ$\_$PRAC/TECN : En el artículo se presentan prácticas o técnicas asociadas a aspectos de CQ (Como por ejemplo PR(Pull Request), Code Review (CR), etc )
+\item CQ$\_$APPROACH: Low : el paper menciona superficalmente los conceptos de QC , High: el paper trata no superficialmente los aspectos de CQ
+\end{itemize}
+
+TODO: Mapping Pregunta de Investigación item de Extracción 
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+\hline
+ID & PI  \\
+\hline
+DEF$\_$QC$\_$ABSTRACT & (P1) \\ 
+& PI1  \\ 
+\hline
+& PI"  \\ 
+\hline
+\end{tabular}
+\end{center}
+\textbf{Extracción Investigador 1}
+
+
+
+\textbf{Proceso de análisis y evaluación de la RR}
+
+TODO: Gráfico de proceso y ciclo de evaluación
+
+\begin{enumerate}
+\item Definición de la preguntas asociadas a la RR
+\item Estrategia de Búsqueda
+\item Evaluación Crítica
+\item Extracción de Datos
+\item Síntesis de Datos
+\item Desarrollo de Reporte 
+\end{enumerate}
+
+TODO : Resultado en TABLA de 
+definiciones, atributos y prácticas. 
+
+{Amenazas a la validez (internas y externas) } 
+
+
+ 
+ 
+ 
+Uno de los principales puntos mencionados por Cartaxo en relación a la aplicación de una RR refiere a las amenazas a la validez (citar). Por tanto este será un punto de la ejecución.  a detallar posteriormente 
+
+\textit{ Procedimiento de extracción: } El procedimiento de extracción de datos puede ser realizado por un solo revisor en RR, por tanto en este trabajo se estableció el rol de conductor principal de la RR y se reportarán los sesgos inherentes de forma transparente
+
+
+\textit{Procedimiento de síntesis}
+  La síntesis del conocimiento es probablemente uno de los pasos más importantes de cualquier estudio, pero al mismo tiempo una de las actividades que más tiempo consumen. La síntesis narrativa o la teoría fundamentada son posibles enfoques que aplicaremos a partir de la finalización de la etapa de ejecución. 
+
+\textit{ Informe/ Reporte de la  revisión rápida}
+ Los profesionales de software y practicantes son el centro de  destino de las RR. Por tanto las RR deben ser informadas de una manera sencilla, centrándose en los resultados y las recomendaciones. Se realizará un Evidence Breafing \cite{cartaxo2016evidence} al finalizar la etapa
+
+\textbf{Template de Extracción: }
+
+TODO.
+
+Estimación de tiempos (El promedio de extracción detallada por artículo es de 20 a 30 minutos) 
+
+TODO 
+
+\section{Resultados}
+\textit{Notas de observaciones en  extracciones preliminares}
+(modelos de calidad de software, métricas, grupos de técnicas,
+sinónimos).
+
+
+\section{Síntesis}
+\textit {Síntesis}
+
+
+\section{Reflexión}
+\textit{Nota: } Reflexión para una conclusión: La etapa de planificación nos está demandando tanto tiempo o mas que una SLR en relación al diseño, iteración y ejecución. El concepto de "rapid"  no parece ser factible ser realizado por un practicante (sugerido generalmente en los artículos de Cartaxo) al menos en una perspectiva de costo/beneficio en práctica y viendo el tiempo de preparación que actualmente nos esta insumiendo. 
+\textit{Nota: no esta siendo }
+\section{Conclusión}
+
+
+
+\section*{Anexo}
+
+\textbf{Formato de Extracción Inicial }
+\begin{itemize}
+\item DEF$\_$QC$\_$ABSTRACT : En el abstract del artículo se menciona directamente o indirectamente al concepto de Calidad de Código (CQ)(Copiar Literal la Mención (CLM)) . NULL en caso de no presentar
+\item DEF$\_$CQ$\_$PAPER`	En el desarrollo del artículo se presenta una definición directa al concepto de calidad de código . NULL en caso de no presentar	La presencia de NULL indicaría la exclusión de la revisión en el articulo
+\item CQ$\_$ATRIB`	En el artículo se mencionan atributos de calidad de código que directa o indirectamente (Como por ejemplo mantenibilidad, escalabilidad, disponibilidad, etc). Mencionar y enumerar cuales son los atributos mencionados.
+\item CQ$\_$PRAC$\_$TECN`	En el artículo se presentan prácticas o técnicas asociadas a aspectos de CQ (Como por ejemplo PR(Pull Request), Code Review (CR), etc )	
+\item `CQ$\_$METH/PROC/STD`	En el artículo se presentan métodos, prácticas o estándares que ayudan a obtener CQ
+\item CQ$\_$PEOP`	En el artículo se presentan aspectos de calidad de código en relación a equipos y personas
+\item CQ$\_$TOOL`	En el artículo se mencionan herramientas asociadas a la calidad de Código( analizadores estáticos, linterns específicos,etc)
+\item CQ$\_$OTROS`	En el artículo se presentan otras referencias a conceptos asociados a CQ que no necesariamente están dentro de la clasificación de CQ
+\item CQ$\_$CITE$\_$REF`	El paper menciona una cita a otro artículo que hace referencia a conceptos y en particular la definición de CQ.  REF el es el bibtex de dicho artículo
+\item `COMMENTS`	Comentarios en relación al artículo	
+\item `CQ$\_$APPROACH`	Low : el paper menciona superficalmente los conceptos de QC , High: el paper trata no superficialmente los aspectos de CQ
+\end{itemize}
+
+
+Artículo : %\cite{lenarduzzi2019doe}
+
+\begin{itemize}
+\item DEF$\_$CQ$\_$ABSTRACT: Define por la negativa ya que menciona 'cosas' de mala QC
+"[code] quality flaws such as code smells, anti-patterns, security
+vulnerabilities, and coding style violations"
+\item `DEF$\_$CQ$\_$PAPER: En lo siguiente hay una expresión que podría entenderse también como una definición de code quality a alto nivel.
+"Previous work confirmed that the presence of PMD issues in the code [some code quality issues], including the code smells and anti-patterns collected
+by PMD, significantly increases the risk of faults and maintenance effort." Code quality relacionado a technical debt
+"PMD is an open-source tool that aims to identify issues that can lead to technical debt accumulating during development."
+\item `CQ$\_$ATRIB`: 
+- Software maintainability
+- Low fault-proneness
+"Therefore, we expect that developers take care of these issues, in order to increase software maintainability and decrease fault-proneness."
+\item `CQ$\_$PRAC/TECN`: NULL
+\item CQ$\_$METH/PROC/STD: NULL
+\item CQ$\_$PEOP: NULL
+\item CQ$\_$TOOL:  Herramienta PMD para encontrar code quality flaws. PMD -> Herramienta de análisis estático (por si luego usamos clasificaciones de algún tipo). We analyzed the quality flaws using PMD, one of the most frequently used static analysis tools
+\item CQ$\_$OTROS: NULL
+
+\end{itemize}
+
+\textbf{Extracción Investigador 2}
+
+%Artículo : \cite{lenarduzzi2019doe}
+
+
+\begin{itemize}
+\item `DEF$\_$CQ$\_$ABSTRACT`: quality flaws such as code smells, anti-patterns, security
+vulnerabilities, and coding style violations in a pull request’s code affect the chance of its acceptance
+when reviewed by a maintainer
+\item DEF$\_$CQ$\_$PAPER: 
+We considered the quality flaws highlighted by PMD rules (code smells, anti-patterns, and coding style violations),
+\item CQ$\_$ATRIB: NULL
+\item CQ$\_$PRAC/TECN: NULL
+\item CQ$\_$METH/PROC/STD: 
+pull request
+review
+static analysis
+code smells
+coding style
+technical debt
+code coverage 
+\item CQ$\_$PEOP: NULL
+\item  CQ$\_$TOOL: PMD
+Checkstyle
+FindBugs
+SonarQube
+\item CQ$\_$OTROS:  `implementation of new features seem to be more important acceptance factors than any other aspects, including quality (Gousios et al., 2015; Calefato et al., 2017) Considering the code style as an influencing factor for inte- grating pull requests, several code style criteria have generally revealed high divergence while several other criteria always in- dicated consistency. However, code style inconsistency between pull requests and the code would affect the process of merging them into the code (Yu et al., 2015).  Integrators decide to accept a contribution after analyzing source code quality, code style, documentation, granularity, and adherence to project conventions (Gousios et al., 2014). 
+In another work, Gousios et al. (2015) conducted a survey aimed at characterizing the key factors considered in the decision- making process of pull request acceptance. Quality was revealed as one of the top priorities for developers. The most important ac- ceptance factors they identified are targeted area importance, test cases, and code quality. However, the respondents specified qual- ity differently from their respective perception, as conformance, good available documentation, and contributor reputation.
+Kononenko et al. (2018) investigated the pull request accep- tance process. Developers’ experience and affiliation were significant factors in both models. Moreover, they report that developers generally associate the quality of a pull request with the quality of its description, complexity, and revertability. 
+
+\end{itemize}
+
+\section*{References}
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{biblio}
+
+\end{document}
