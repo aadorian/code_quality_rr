@@ -68,40 +68,40 @@ calidad de código, rapid review, ingeniería de sofware
 
 % Uno de los desafíos más relevantes actualmente en el contexto de investigación de Ingeniería de Software es el de proveer evidencia en  la práctica\cite{cartaxo2019software}, siendo  este uno de los principales objetivos de EBSE (Evidence Base Software Enginnering) \cite{cartaxo2019software}. 
 
-Descripción del contexto de Q de Software (TODO) 
-\section{Motivación}
+% Descripción del contexto de Q de Software (TODO) 
 
- El concepto "calidad de código" es utilizado de forma frecuente en distintas publicaciones del área de Ingeniería de Software \cite{stamelos2002code,spinellis2006code,butler2010exploring,baggen2012standardized, raychev2021learning,yang2021design} sin presentar en común una definición respecto del mismo.   En una de las principales guías de la disciplina:  Guide to the Software Engineering Body of Knowledge (SWEBOK) \cite{bourque1999guide} propuesta por la IEEE Computer Society  tampoco  se presenta una definición del término "code quality" si bien se mencionan aspectos de calidad en las distintas áreas de conocimiento. 
-  Es en este contexto que nos surge la pregunta de investigación:  ¿Qué es la calidad de código?  mas específicamente ¿Que se entiende por calidad de código? (PI)
+ El concepto "calidad de código ("code quality") " es utilizado de forma frecuente en distintas publicaciones del área de Ingeniería de Software \cite{stamelos2002code,spinellis2006code,butler2010exploring,baggen2012standardized, raychev2021learning,yang2021design} sin presentar una definición en consenso.   En una de las principales guías de la disciplina:  Guide to the Software Engineering Body of Knowledge (SWEBOK) \cite{bourque1999guide} propuesta por la IEEE Computer Society  tampoco  se presenta una definición del término "code quality".
+  Es en este contexto que nos surge la pregunta de investigación:  ¿Qué es la calidad de código?  (PI) mas específicamente ¿Que se entiende por calidad de código? (P1)
 
- En este trabajo a su vez buscamos complementar trabajos anteriores respecto de la temática \cite{adorjan2020code} teniendo como principal objetivo lograr una definición de calidad de código, sus atributos y principales prácticas.
+ En este trabajo a su vez buscamos complementar el estudio de trabajos anteriores respecto de la temática \cite{adorjan2020code} y responder a la pregunta de investigación mencionada anteriormente.
+ %What are the review’s objectives? 
+ \section{Objetivo}
+ El objetivo del presente trabajo es obtener a partir de una revisión rápida de la literatura (RR) \cite{cartaxo2019software}\cite{cartaxo2020rapid}  una definición de calidad de código, estableciendo sus atributos y principales prácticas.
 
-\section{Objetivo}
-El objetivo del presente trabajo es obtener a partir de una revisión rápida de la literatura (RR) \cite{cartaxo2019software}\cite{cartaxo2020rapid}  una posible definición de calidad de código, sus atributos y principales prácticas.
 
 \section{Método}
 
-JUSTICAFICIóN FORMAL - 
+Como método de investigación seleccionamos la propuesta de Cartaxo et al. \cite{cartaxo2020rapid} en relación a la ejecución de una revisión rápida de la literatura (RR). Según Cartaxo  las RR reducen el esfuerzo de algunos de los pasos de las revisiones sistemáticas de la literatura \cite{cartaxo2020rapid} y permiten posteriormente  mediante el reporte de  resultados (llamados evidence briefings  \cite{cartaxo2016evidence})  transferir de forma adecuada el conocimiento a los practicantes de la industria \cite{cartaxo2018role}. 
 
-Como método de investigación seleccionamos la propuesta de Cartaxo et al. \cite{cartaxo2020rapid} en relación a la ejecución de una revisión rápida de la literatura (RR). Las RR reducen el esfuerzo de algunos de los pasos de las revisiones sistemáticas de la literatura y permiten posteriormente  mediante el reporte de  resultados (Evidence Briefings) transferir el conocimiento los practicantes de la industria \cite{cartaxo2016evidence}. 
+A continuación detallamos el protocolo definido y reportamos el marco contextualizado a nuestro estudio: 
+
+\section{Protocolo de la RR}
+
+%  \textit{Planificación de una revisión rápida:}   Se diseñó un protocolo donde se establecieron  las decisiones y procedimientos para realizar la RR. 
+
+%\textit{ Demanda de RR :}  En nuestro estudio el grupo de investigación enfocó la agenda en base a un problema práctico en relación a la definición de qué es la calidad de código, basado fundamentalmente en la necesidad planteada en un estudio previo por parte de líderes técnicos de la industria (referencia a paper CLEI) en referencia al concepto. 
+
+%Dado que el problema aún no está  definido, decidimos  utilizar uno de los métodos de investigación cualitativa como entrevistas para comprender mejor el contexto y posteriormente realizar esta RR. A su vez, más adelante para complementar este método utilizaremos tal vez workshops,  aplicación de un caso de estudio u otro que el grupo de investigación considere adecuado.
 
 
-A continuación detallamos el protocolo definido y establecemos un marco contextualizado a nuestro estudio: 
+%search questions, search strategy, inclu- sion/exclusion criteria, selection procedure, extraction procedure, synthesis proce- dure, reporting, among others.
+\textit{ Definición del protocolo:}  El protocolo de una RR consiste en especificar todos los pasos metodológicos que comprende una  revisión rápida de la literatura tales como:  preguntas de investigación, estrategia de búsqueda, criterios de inclusión/exclusión, procedimiento de extracción y reporte \cite{cartaxo2020rapid}.  
 
-\section{Características de las etapas}
-
-  \textit{Planificación de una revisión rápida:}   Se diseñó un protocolo donde se establecieron  las decisiones y procedimientos para realizar la RR. 
-
-\textit{ Demanda de RR :}  En nuestro estudio el grupo de investigación enfocó la agenda en base a un problema práctico en relación a la definición de qué es la calidad de código, basado fundamentalmente en la necesidad planteada en un estudio previo por parte de líderes técnicos de la industria (referencia a paper CLEI) en referencia al concepto. 
-
-\textit{Definición del problema: } Dado que el problema aún no está  definido, decidimos  utilizar uno de los métodos de investigación cualitativa como entrevistas para comprender mejor el contexto y posteriormente realizar esta RR. A su vez, más adelante para complementar este método utilizaremos tal vez workshops,  aplicación de un caso de estudio u otro que el grupo de investigación considere adecuado.
-
-\textit{Definición de  las preguntas de investigación }: Las preguntas de investigación de la presente RR están definidas y son las siguientes:
-
-\textbf{Preguntas de Investigación}
-\textit{¿Qué es la calidad de código?}
+\textit{Participantes: } En este proyecto trabajaron tres integrantes del equipo de investigación de Ingeniería de Software de IS.uy (TODO referencia). El investigador que realizó la extracción  es un candidato a Phd, siendo supervisado por dos docentes doctores en el área de investigación de Ingeniería de Software empírica.  Todos los participantes de forma activa realizaron sugerencias en relación al diseño y ejecución de presente estudio. % esto lo agrega Cartaxio en papers de publicación de RR.
 
 \textit{Preguntas de Investigación}
+Los participantes de este estudio buscamos responder las siguientes preguntas de investigación con el objetivo de guiar la RR:
+\textit{¿Qué es la calidad de código?} (PI)
 
     \textit{Preguntas específicas}
    \begin{enumerate}
@@ -111,116 +111,163 @@ A continuación detallamos el protocolo definido y establecemos un marco context
    
 \end{enumerate}
 
-\textit{ Definición del protocolo:}  El protocolo de una RR consiste en especificar todos los pasos metodológicos que comprende la revisión  \cite{cartaxo2020rapid}.  En este contexto, se plantean los siguientes pasos: 
+%What sources were searched to identify primary studies? Were there any restrictions?
+\textit{Estrategia de búsqueda: } 
+ La selección de estudios primarios corresponde con la búsqueda de artículos publicados en \textbf{Scopus} durante el periodo 2019 y 2020 asociados a la siguiente búsqueda realizada el 14-Nov-2020 : “code quality” AND software ; mas específicamente: 
+ "TITLE-ABS-KEY ( "code quality" AND software ) AND ( LIMIT-TO ( PUBYEAR , 2021 ) OR LIMIT-TO ( PUBYEAR , 2020 )" 
+ 
+%What were the inclusion/exclusion criteria and how were they applied?
 
-\begin{enumerate}
-\item Selección de artículos de \textbf{Scopus} periodo 2019 y 2020 asociados a la búsqueda "code quality" AND software. El criterio de inclusión esta asociado únicamente a la disponibilidad del artículo digital en relación a las fuentes bibliográficas consultadas.
-\item  Descarga de los artículos en las fuentes bibliográficas disponibles. 
-\item Diseño y construcción del template  de extracción (ver template de extracción)
-\item Se definieron en conjunto 2 roles principales el de conductor de RR y validadores de la RR. 
-\item Se establecieron/diseñaron 3 etapas de iteración en la creación de este artefacto: 
-    \textit{Etapa 1: } El conductor de la RR crea el formato inicial de qué características serán utilizadas en la extracción. Facilita un primer bosquejo de template de extracción y cada investigador analiza por separado el primer artículo de la lista identificando los atributos de CQ, prácticas métodos, etc.  En conjunto se establece una primera versión del template de extracción a partir de una etapa piloto. (Dejar evidencia en un anexo de cada una de las extracciones)
-  \textit{  Etapa 2: } El conductor principal de la RR selecciona un subconjunto al azar de la RR para continuar con la aplicación del criterio establecido e identificar mejoras en el protocolo y template de extracción con el objetivo de  realizar posibles ajustes. Los investigadores en conjunto seleccionan otro artículo y se ajusta nuevamente el template de extracción. En esta etapa, el conductor principal de la RR realizó una primera ejecución del conjunto de artículos disponibles como fuente dejando en un repositorio en común la primera extracción de los mismos y una categorización de alto/medio/bajo  contenido asociado al contexto de CQ. A partir de esa categorización los artículos calificados como bajo contenido de CQ serán parte del criterio de exclusión en la etapa 3 de ejecución de la RR. 
-    \textit{Etapa 3:} Etapa de diseño final del template de extracción de la RR y aplicación de criterios de extracción. En concenso el grupo de investigación establece el criterio de cual será el tipo de reporte global de extracción, y cómo se realizará la síntesis de los artículos.
-\item Los investigadores en conjunto validan los criterios de extracción y template final de extracción y fundamentalmente el medio de comunicación de los resultados.  El conductor principal de la RR realiza la extracción, reporta los resultados preliminares al equipo. 
-\item Se analizan en conjunto los resultados, la síntesis de la RR y se reporta el medio definido en el punto anterior. A su vez se definen los medios de comunicación de los resultados obtenidos. 
-\item Se envía a un conjunto seleccionado de líderes técnicos de la industria el reporte esperando un feedback respecto del mismo. Se procesan los resultados obtenidos, se analizan y documentan.
-\item Los investigadores realizan un análisis crítico y retrospectivo respecto del método aplicado , técnicas, resultados obtenidos. 
-\end{enumerate}
+%What criteria were used to assess the quality of primary studies and how were they applied? Esto no aplica en una RR segun Cartaxio
+%How were the data extracted from the primary studies?
 
+\textit{Instrumento de extracción}
+El instrumento de extracción a ser utilizado en la presente RR fue el siguiente: 
 
-
-
-\textit{Realización de una revisión rápida}, proporcionando evidencia a los practicantes de estos puntos mencionados.
-
-\textit{Estrategia de Búsqueda} :  Si bien generalmente se emplean múltiples estrategias de búsqueda para garantizar una cobertura exhaustiva de una RR o SLR, en este estudio se decidió restringir utilizando  un único motor de búsqueda y restringir a los últimos dos años en relación al período de publicaciones (2019 y 2020 respectivamente).
-
-\textbf{Fuente:} Scopus 
-\textbf{Fecha : }14-Nov-2020 
-\textbf{cadéna de búsqueda}: \textit{\textbf{“code quality” AND software}}
-especificamente: "TITLE-ABS-KEY ( "code quality" AND software ) AND ( LIMIT-TO ( PUBYEAR , 2021 ) OR LIMIT-TO ( PUBYEAR , 2020 )" 
-
-\textbf{Formato de Extracción}
 \begin{itemize}
-\item  DEF$\_$CQ$\_$ABSTRACT   En el abstract del artículo se menciona directamente o indirectamente al concepto de Calidad de Código (CQ) (Copiar Literal la Mención (CLM)) . NULL en caso de no presentar   
-\item CQ$\_$ATRIB  :  En el artículo se mencionanatributos de calidad de código que directa o indirectamente  (Como por ejemplo  mantenibilidad, escalabilidad, disponibilidad, etc). Mencionar y enumerar cuales son los atributos mencionados
-\item CQ$\_$PRAC/TECN : En el artículo se presentan prácticas o técnicas asociadas a aspectos de CQ (Como por ejemplo PR(Pull Request), Code Review (CR), etc )
-\item CQ$\_$APPROACH: Low : el paper menciona superficalmente los conceptos de QC , High: el paper trata no superficialmente los aspectos de CQ
+\item  DEF$\_$CQ$\_$ABSTRACT   En el abstract del artículo se menciona directamente o indirectamente al concepto de Calidad de Código (CQ) (Copiar Literal la Mención (CLM)) . Se referencia como NULL en caso de no presentar   
+\item CQ$\_$ATRIB  :  En el artículo se mencionan atributos de calidad de código  directa o indirectamente  (Como por ejemplo  mantenibilidad, escalabilidad, disponibilidad, etc). En este ítem se debe mencionar y enumerar cuales son los atributos presentados.
+\item CQ$\_$PRAC/TECN : En el artículo se presentan prácticas o técnicas asociadas a aspectos de CQ (Como por ejemplo PR(Pull Request), Code Review (CR))
+\item CQ$\_$APPROACH: Low : el artículo menciona superficialmente los conceptos de QC , High: el artículo refiere en profundidad conceptos de CQ
 \end{itemize}
 
-TODO: Mapping Pregunta de Investigación item de Extracción 
 
+\textit{Mapeo PI - Items de extracción}
+ A continuación se presenta un mapeo de los ítem que constituyen  el instrumento de extracción y  las preguntas de investigación formuladas:
+ 
+\begin{table}[htb]
 \begin{center}
-\begin{tabular}{ |c|c|c|c| } 
+\label{t:map} 
+\begin{tabular}{ |l|c|c|c| } 
 \hline
 ID & PI  \\
 \hline
 DEF$\_$QC$\_$ABSTRACT & (P1) \\ 
-& PI1  \\ 
+CQ$\_$ATRIB  & (P2) \\ 
+CQ$\_$PRAC/TECN& (P3) \\ 
+CQ$\_$APPROACH:  & (P1) \\ 
+
 \hline
-& PI"  \\ 
-\hline
+
 \end{tabular}
 \end{center}
-\textbf{Extracción Investigador 1}
+\caption{Mapeo Preguntas de Investigación - Ítem de Extracción.}
+\end{table}
 
 
+\textbf{Criterios de Inclusión/Exclusión}
+El criterio de inclusión  utilizado estuvo asociado únicamente a la disponibilidad de acceso del equipo investigador al artículo en relación a las fuente bibliográfica consultadas. (TODO: listado de artículos en Anexo ..disponible en ..)
+El criterio de exclusión considerado fue en una etapa piloto  a partir de una categorización  como 'Low' en el item CQ$\_$APPROACH del formato de extracción (presentado a continuación) el cual establece una clasificación en relación a la profundidad o superficialidad de conceptos de QC. Esta clasificación refiere al grado de profundidad de análisis de los ítem considerandos. Por ejemplo si el artículo no mencionan  practicas, atributos o técnicas el artículo es considerado como 'Low' y si el artículo menciona en detalle atributos, prácticas y técnicas es considerado con la categorización de 'High'.   
+\textbf{Procedimiento de Selección}
+
+TODO: Tabla de artículos seleccionados 
+/Referencia/Nombre Paper 
+
+
+
+%A systematic review involves several discrete activities. Existing guidelines for systematic reviews have different suggestions about the number and order of activities
+
+
+
+ %   \textit{Etapa 1: } El conductor de la RR crea el formato de la planilla de extracción.  Posteriormente cada investigador analiza por separado el primer artículo de la lista de artículos seleccionados completando los itemas de la planilla.  En conjunto se ponen en común en una primera versión de extracción a partir de una etapa piloto. (Dejar evidencia en un anexo de cada una de las extracciones GITHUB)
+  %\textit{  Etapa 2: } El conductor principal de la RR selecciona un subconjunto al azar de la RR para continuar con la aplicación del criterio establecido e identificar mejoras en el protocolo con el objetivo de  realizar posibles ajustes. Los investigadores en conjunto seleccionan otro artículo y se ajusta nuevamente el template de extracción. En esta etapa, el conductor principal de la RR realiza una primera ejecución del conjunto de artículos disponibles como fuente dejando en un repositorio en común la primera extracción de los mismos y una categorización de alto/bajo CQ$\_$APPROACH. Esta clasificación refiere al grado de profundidad de análisis de los items considerandos en la planilla. Por ejemplo si el artículo no mencionan  practicas, atributos o técnicas el artículo es considerado como Low y si el artículo menciona en detalle atributos, prácticas y técnicas es considerado con la categorización de High.    
+  %Nota: a partir de esta categorización los artículos calificados como bajo contenido de CQ serán parte del criterio de exclusión en la etapa 3 de ejecución de la RR. 
+  %  \textit{Etapa 3:} Etapa de diseño final de extracción de la RR y aplicación de criterios de extracción. En concenso el grupo de investigación establece el criterio de cual será el tipo de reporte global de extracción, y en que formato se realizará la síntesis de los artículos.
 
 \textbf{Proceso de análisis y evaluación de la RR}
 
 TODO: Gráfico de proceso y ciclo de evaluación
+(en formato gráfico)
+%\begin{enumerate}
+%\item  Etapa Piloto
+%\item Definición de la preguntas asociadas a la RR
+%\item Estrategia de Búsqueda
+%\item Evaluación Crítica
+%\item Extracción de Datos
+%\item Síntesis de Datos
+%\item Desarrollo de Reporte 
+%\end{enumerate}
 
-\begin{enumerate}
-\item Definición de la preguntas asociadas a la RR
-\item Estrategia de Búsqueda
-\item Evaluación Crítica
-\item Extracción de Datos
-\item Síntesis de Datos
-\item Desarrollo de Reporte 
-\end{enumerate}
-
-TODO : Resultado en TABLA de 
-definiciones, atributos y prácticas. 
-
-{Amenazas a la validez (internas y externas) } 
+%\item Los investigadores en conjunto validan los criterios de extracción y plantilla final de extracción y fundamentalmente el medio de comunicación de los resultados.  El conductor principal de la RR realiza la extracción, reporta los resultados preliminares al equipo. 
+%\item Se analizan en conjunto los resultados, la síntesis de la RR y se reporta el medio definido en el punto anterior. A su vez se definen los medios de comunicación de los resultados obtenidos. 
+%\item Se envía a un conjunto seleccionado de líderes técnicos de la industria el reporte esperando un feedback respecto del mismo. Se procesan los resultados obtenidos, se analizan y documentan.
+%\item Los investigadores realizan un análisis crítico y retrospectivo respecto del método aplicado , técnicas y  resultados obtenidos. 
+%\end{enumerate}
 
 
- 
- 
- 
-Uno de los principales puntos mencionados por Cartaxo en relación a la aplicación de una RR refiere a las amenazas a la validez (citar). Por tanto este será un punto de la ejecución.  a detallar posteriormente 
 
-\textit{ Procedimiento de extracción: } El procedimiento de extracción de datos puede ser realizado por un solo revisor en RR, por tanto en este trabajo se estableció el rol de conductor principal de la RR y se reportarán los sesgos inherentes de forma transparente
+%\textit{Realización de una revisión rápida}, proporcionando evidencia a los practicantes de estos puntos mencionados.
 
+%\textit{Estrategia de Búsqueda} :  Si bien generalmente se emplean múltiples estrategias de búsqueda para garantizar una cobertura exhaustiva de una SLR, en este estudio según Cardaxio es posible  aplicar en una RR   utilizando  un único motor de búsqueda y restringir a los últimos dos años en relación al período de publicaciones (2019 y 2020 respectivamente).
+
+
+
+
+
+\textit{ Procedimiento de extracción: } 
+%El procedimiento de extracción de datos puede ser realizado por un solo revisor en RR, por tanto en este trabajo se estableció el rol de conductor principal de la RR y se reportarán los sesgos inherentes de forma transparente
+
+Según Cartaxo en este punto se extraen  los aspectos  relevantes que pueda ayudar a responder las preguntas de investigación. \cite{cartaxo2018role} . Si bien el proceso de extracción fue realizado por el conductor de la RR, en etapas piloto del proceso de extracción fueron realizadas en conjunto por parte de los participantes involucrados.(TODO Anexo y disponible en ). %La descripción de ete proceso es breve según el artículo de Cartaxio reporta
 
 \textit{Procedimiento de síntesis}
-  La síntesis del conocimiento es probablemente uno de los pasos más importantes de cualquier estudio, pero al mismo tiempo una de las actividades que más tiempo consumen. La síntesis narrativa o la teoría fundamentada son posibles enfoques que aplicaremos a partir de la finalización de la etapa de ejecución. 
+ % La síntesis del conocimiento es probablemente uno de los pasos más importantes de cualquier estudio, pero al mismo tiempo una de las actividades que más tiempo consumen. La síntesis narrativa o la teoría fundamentada son posibles enfoques que aplicaremos a partir de la finalización de la etapa de ejecución. 
 
-\textit{ Informe/ Reporte de la  revisión rápida}
- Los profesionales de software y practicantes son el centro de  destino de las RR. Por tanto las RR deben ser informadas de una manera sencilla, centrándose en los resultados y las recomendaciones. Se realizará un Evidence Breafing \cite{cartaxo2016evidence} al finalizar la etapa
-
-\textbf{Template de Extracción: }
-
-TODO.
-
-Estimación de tiempos (El promedio de extracción detallada por artículo es de 20 a 30 minutos) 
-
-TODO 
+TODO: comentarios de timelapse (Comienzo de búsqueda de string , deadline de ejecución)
 
 \section{Resultados}
+
+
+\textbf{Extracción Investigador conductor de la RR}
+
+
+
+\textit{ Informe/ Reporte de la  revisión rápida}
+ Los profesionales de software y practicantes son el centro de  destino de las RR. Por tanto las RR deben ser informadas de una manera sencilla, centrándose en los resultados y las recomendaciones. Se realizó un Evidence Breafing \cite{cartaxo2016evidence} al finalizar la etapa de extracción el cual esta disponible en : 
+
+
+\section{Síntesis de la RR}
+
+
+\section{Conclusión}
+
 \textit{Notas de observaciones en  extracciones preliminares}
 (modelos de calidad de software, métricas, grupos de técnicas,
 sinónimos).
 
 
-\section{Síntesis}
+\section{OUT OF THE RECORD COMENTARIOS (aspectos + y -)j esto lo usa Cartaxio como What did not work well y discussion}
+(+)
+\begin{enumerate}
+\item Permite ordenar el proceso de investigación formalización en la comunicación equipo
+\item Aporte del método per se
+\item Formalización mediante un documento de extracción 
+\item Solo la utilización de un search source Scopus
+\end{enumerate}
+
+
+(-)
+
+\begin{enumerate}
+\item No esta conducido por practicantes (deberían ser incluidos)
+\item Los practicantes no son stakeholders
+\item Las iteraciones realizadas están mas en el contexto de un mapeo de la literatura al tratar de unificar los criterios de extracción. 
+\item La segunda iteración fue realizada midiendo papers distintos (la primera fue mas adecuada o al menos mas enriquecedora). 
+\item El time frame de una RR tiene que ser semanas (me esta llevando 6 meses ) mi intuición es que  debería salir del método si no da resultados a corto/mediano plazo
+\item Los papers en sí son un desastre y solo 2 o 3 aportan .. antes de realizar una RR debería realizarse un data cleaning de esos papers (de alguna forma la categorización de high/low lo termina realizando) y si hay varios relevantes ahí sí ejecutar una RR sino es un waste of time 
+\item No establecimos un deadline a tiempo (esto lo usa Cartaxio con la industria en uno de los reportes)
+\end{enumerate}
+
+
+
+
+
 \textit {Síntesis}
 
 
-\section{Reflexión}
+\section{Reflexión para tesis}
 \textit{Nota: } Reflexión para una conclusión: La etapa de planificación nos está demandando tanto tiempo o mas que una SLR en relación al diseño, iteración y ejecución. El concepto de "rapid"  no parece ser factible ser realizado por un practicante (sugerido generalmente en los artículos de Cartaxo) al menos en una perspectiva de costo/beneficio en práctica y viendo el tiempo de preparación que actualmente nos esta insumiendo. 
 \textit{Nota: no esta siendo }
-\section{Conclusión}
+
 
 
 
@@ -296,7 +343,7 @@ Kononenko et al. (2018) investigated the pull request accep- tance process. Deve
 
 \end{itemize}
 
-\section*{References}
+
 
 
 \bibliographystyle{IEEEtran}
